@@ -1,4 +1,4 @@
-export function NumberOfCharacters({ characters }) {
+export function NumberOfCharacters({ characters = [] }) {
     if (characters.length === 0) {
       return <p>There is no character</p>;
     }

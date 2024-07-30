@@ -1,18 +1,13 @@
 import './App.css'
 
 import characters from './data/characters.json'
+import { CharactersList } from './src/components/CharactersList'
 
 function App() {
   return (
     <>
       <h1>Marvel Characters</h1>
-      <ul id="characters">
-        {characters.map((character) => (
-          <li key={character.id}>
-            {character.name}
-          </li>
-        ))}
-      </ul>
+      <CharactersList characters={characters} />
     </>
   )
 }

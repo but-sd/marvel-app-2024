@@ -1,12 +1,13 @@
 import React from 'react';
 import { CharactersList } from "../components/CharactersList";
 import { NumberOfCharacters } from "../components/NumberOfCharacters";
-
-import characters from '../data/characters.json';
+import { useLoaderData } from 'react-router';
 
 const CharactersPage = () => {
     // change the title of the page
     document.title = "Marvel App";
+
+    const characters = useLoaderData();
 
     return (
         <>
